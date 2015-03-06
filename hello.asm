@@ -1,7 +1,6 @@
 ; Filename: hello.asm
 ; Author: s0lst1c3
-; Description: writes "Hello!" on the screen using only system calls.
-
+; Description: writes "Hello world!" on the screen using only system calls.
 
 section .text
 
@@ -21,10 +20,8 @@ _start:
 	mov eax, 0x3c
 	mov edi, 0x0
 	int 0x80
-	
 
 
 message:
-
-	db "Hello!", 0xa
+	db "Hello world!", 0xa
 
